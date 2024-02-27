@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MembersController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\CustomerController;
 
@@ -19,3 +20,7 @@ use App\Http\Controllers\CustomerController;
 Route::resource('student', StudentController::class);
 
 Route::resource('customer', CustomerController::class);
+
+
+Route::resource('member', MembersController::class);
+
